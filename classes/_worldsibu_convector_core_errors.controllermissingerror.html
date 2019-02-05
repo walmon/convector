@@ -1,0 +1,594 @@
+<!doctype html>
+<html class="default no-js">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>ControllerMissingError | Convector Framework</title>
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
+	<link rel="stylesheet" href="../assets/css/main.css">
+	<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
+	integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+	crossorigin="anonymous">
+</head>
+<body>
+<header>
+	<div class="tsd-page-toolbar">
+		<div class="container">
+			<div class="table-wrap">
+				<div class="table-cell"> <a href="../index.html" class="title uppercase">
+						<img src="../assets/images/convector.svg" class="convector-logo">
+					</a>
+				</div>
+				<div class="table-cell" id="">
+					<div>
+						<ul class="social-menu">
+							<li>
+								<a href="https://discord.gg/twRwpWt" target="_blank">
+									<i class="fab fa-discord"></i>
+								</a>
+							</li>
+							<li>
+								<a href="https://www.youtube.com/watch?v=snad2K9vu2g&list=PL-1Vd1bTiSr_i2qeqeHCUWaD74ymRvidb" target="_blank">
+									<i class="fab fa-youtube"></i>
+								</a>
+							</li>
+							<li>
+								<a href="https://twitter.com/convectororg" target="_blank">
+									<i class="fab fa-twitter"></i>
+								</a>
+							</li>
+						</ul>
+					</div>
+					<a href="#" class="tsd-widget menu no-caption" data-toggle="menu">Menu</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</header>
+<div class="container container-main">
+	<div class="row">
+		<div class="col-2 col-menu menu-sticky-wrap menu-highlight">
+			<nav class="tsd-navigation primary">
+				<ul class="custom-nav">
+					<li>
+						<a href="../index.html">
+						<i class="fas fa-home"></i>Home</a>
+					</li>
+					<li>
+						<a href="../modules/fundamentals.html">Fundamentals</a>
+						<ul>
+							<li>
+								<a href="../modules/packages.html">Packages</a>
+							</li>
+							<li>
+								<a href="../modules/models.html">Models</a>
+							</li>
+							<li>
+								<a href="../modules/controllers.html">Controllers</a>
+							</li>
+							<li>
+								<a href="../modules/chaincode_manager.html">Tool: Chaincode Manager</a>
+							</li>
+							<li>
+								<a href="../modules/development_environment.html">Tool: Development Environment</a>
+							</li>
+						</ul>
+					</li>
+					<li>
+						<a href="../modules/getting_started.html">Getting Started</a>
+						<ul>
+							<li>
+								<a href="https://medium.com/worldsibu/how-to-create-a-backend-in-nodejs-for-hyperledger-fabric-6c1293fe3e37"
+								target="_blank">
+								<i class="fas fa-external-link-alt"></i>Fullstack usage - Node JS integration</a>
+							</li>
+						</ul>
+					</li>
+					<li>
+						<a href="../modules/tips.html">Tips and tricks</a>
+					</li>
+					<li>
+						<a href="../modules/linux_users.html">For Linux Users</a>
+					</li>
+					<li>
+						<a href="../modules/hyperledger_fabric.html">Small overview of Hyperledger Fabric</a>
+					</li>
+					<li>
+						<a href="https://github.com/worldsibu/hurley" target="_blank">
+							<i class="fas fa-tools"></i>
+						Hurley</a>
+					</li>
+					<li>
+						<a href="https://github.com/worldsibu/convector-cli" target="_blank">
+							<i class="fas fa-terminal"></i>
+						Convector CLI</a>
+					</li>
+					<li>
+						<a href="https://github.com/worldsibu/convector" target="_blank">
+							<i class="fab fa-github"></i>
+						Source code</a>
+					</li>
+					<li>
+						<a href="https://medium.com/worldsibu/for-devs/home" target="_blank">
+						<i class="fab fa-medium-m"></i>Medium Blog</a>
+					</li>
+					<li>
+						<a href="https://discord.gg/twRwpWt" target="_blank"><i class="fab fa-discord"></i> Discord chat</a>
+					</li>
+					<li>
+						<div class="powered-by">
+							<div>Created and sponsored by
+								<a href="https://worldsibu.tech">
+									<img src="../assets/images/worldsibu.svg" width=150>
+							</a></div>
+							<div>
+								Licensed under the
+								<a href="https://raw.githubusercontent.com/worldsibu/convector/develop/LICENSE.txt" target="_blank">Apache 2.0
+								license</a>.
+							</div>
+						</div>
+					</li>
+				</ul>
+			</nav>
+			<nav class="tsd-navigation secondary menu-sticky">
+				<ul class="before-current">
+					<li class=" tsd-kind-class tsd-parent-kind-external-module">
+						<a href="_worldsibu_convector_core_errors.baseerror.html" class="tsd-kind-icon">Base<wbr>Error</a>
+					</li>
+					<li class=" tsd-kind-class tsd-parent-kind-external-module">
+						<a href="_worldsibu_convector_core_errors.chaincodeinitializationerror.html" class="tsd-kind-icon">Chaincode<wbr>Initialization<wbr>Error</a>
+					</li>
+					<li class=" tsd-kind-class tsd-parent-kind-external-module">
+						<a href="_worldsibu_convector_core_errors.chaincodeinvokationerror.html" class="tsd-kind-icon">Chaincode<wbr>Invokation<wbr>Error</a>
+					</li>
+					<li class=" tsd-kind-class tsd-parent-kind-external-module">
+						<a href="_worldsibu_convector_core_errors.configurationfileopenerror.html" class="tsd-kind-icon">Configuration<wbr>File<wbr>Open<wbr>Error</a>
+					</li>
+					<li class=" tsd-kind-class tsd-parent-kind-external-module">
+						<a href="_worldsibu_convector_core_errors.configurationinvaliderror.html" class="tsd-kind-icon">Configuration<wbr>Invalid<wbr>Error</a>
+					</li>
+					<li class=" tsd-kind-class tsd-parent-kind-external-module">
+						<a href="_worldsibu_convector_core_errors.configurationparseerror.html" class="tsd-kind-icon">Configuration<wbr>Parse<wbr>Error</a>
+					</li>
+					<li class=" tsd-kind-class tsd-parent-kind-external-module">
+						<a href="_worldsibu_convector_core_errors.controllerargumentparseerror.html" class="tsd-kind-icon">Controller<wbr>Argument<wbr>Parse<wbr>Error</a>
+					</li>
+					<li class=" tsd-kind-class tsd-parent-kind-external-module">
+						<a href="_worldsibu_convector_core_errors.controllerimporterror.html" class="tsd-kind-icon">Controller<wbr>Import<wbr>Error</a>
+					</li>
+					<li class=" tsd-kind-class tsd-parent-kind-external-module">
+						<a href="_worldsibu_convector_core_errors.controllerinstantiationerror.html" class="tsd-kind-icon">Controller<wbr>Instantiation<wbr>Error</a>
+					</li>
+					<li class=" tsd-kind-class tsd-parent-kind-external-module">
+						<a href="_worldsibu_convector_core_errors.controllerinvalidargumenterror.html" class="tsd-kind-icon">Controller<wbr>Invalid<wbr>Argument<wbr>Error</a>
+					</li>
+					<li class=" tsd-kind-class tsd-parent-kind-external-module">
+						<a href="_worldsibu_convector_core_errors.controllerinvaliderror.html" class="tsd-kind-icon">Controller<wbr>Invalid<wbr>Error</a>
+					</li>
+					<li class=" tsd-kind-class tsd-parent-kind-external-module">
+						<a href="_worldsibu_convector_core_errors.controllerinvalidfunctionerror.html" class="tsd-kind-icon">Controller<wbr>Invalid<wbr>Function<wbr>Error</a>
+					</li>
+					<li class=" tsd-kind-class tsd-parent-kind-external-module">
+						<a href="_worldsibu_convector_core_errors.controllerinvalidinvokeerror.html" class="tsd-kind-icon">Controller<wbr>Invalid<wbr>Invoke<wbr>Error</a>
+					</li>
+					<li class=" tsd-kind-class tsd-parent-kind-external-module">
+						<a href="_worldsibu_convector_core_errors.controllerinvokablesmissingerror.html" class="tsd-kind-icon">Controller<wbr>Invokables<wbr>Missing<wbr>Error</a>
+					</li>
+				</ul>
+				<ul class="current">
+					<li class="current tsd-kind-class tsd-parent-kind-external-module">
+						<a href="_worldsibu_convector_core_errors.controllermissingerror.html" class="tsd-kind-icon">Controller<wbr>Missing<wbr>Error</a>
+						<ul>
+							<li class=" tsd-kind-constructor tsd-parent-kind-class tsd-is-overwrite">
+								<a href="_worldsibu_convector_core_errors.controllermissingerror.html#constructor" class="tsd-kind-icon">constructor</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-overwrite">
+								<a href="_worldsibu_convector_core_errors.controllermissingerror.html#code" class="tsd-kind-icon">code</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class">
+								<a href="_worldsibu_convector_core_errors.controllermissingerror.html#ctrl" class="tsd-kind-icon">ctrl</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-overwrite">
+								<a href="_worldsibu_convector_core_errors.controllermissingerror.html#description" class="tsd-kind-icon">description</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-overwrite">
+								<a href="_worldsibu_convector_core_errors.controllermissingerror.html#explanation" class="tsd-kind-icon">explanation</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+								<a href="_worldsibu_convector_core_errors.controllermissingerror.html#original" class="tsd-kind-icon">original</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class">
+								<a href="_worldsibu_convector_core_errors.controllermissingerror.html#pkg" class="tsd-kind-icon">pkg</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-static">
+								<a href="_worldsibu_convector_core_errors.controllermissingerror.html#message" class="tsd-kind-icon">message</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-static">
+								<a href="_worldsibu_convector_core_errors.controllermissingerror.html#name" class="tsd-kind-icon">name</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited tsd-is-static">
+								<a href="_worldsibu_convector_core_errors.controllermissingerror.html#stack" class="tsd-kind-icon">stack</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-protected">
+								<a href="_worldsibu_convector_core_errors.controllermissingerror.html#getmessage" class="tsd-kind-icon">get<wbr>Message</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-protected">
+								<a href="_worldsibu_convector_core_errors.controllermissingerror.html#getoriginal" class="tsd-kind-icon">get<wbr>Original</a>
+							</li>
+						</ul>
+					</li>
+				</ul>
+				<ul class="after-current">
+					<li class=" tsd-kind-class tsd-parent-kind-external-module">
+						<a href="_worldsibu_convector_core_errors.controllernamespacemissingerror.html" class="tsd-kind-icon">Controller<wbr>Namespace<wbr>Missing<wbr>Error</a>
+					</li>
+					<li class=" tsd-kind-class tsd-parent-kind-external-module">
+						<a href="_worldsibu_convector_core_errors.idnotfounderror.html" class="tsd-kind-icon">Id<wbr>Not<wbr>Found<wbr>Error</a>
+					</li>
+					<li class=" tsd-kind-class tsd-parent-kind-external-module">
+						<a href="_worldsibu_convector_core_errors.invalididerror.html" class="tsd-kind-icon">Invalid<wbr>IdError</a>
+					</li>
+					<li class=" tsd-kind-class tsd-parent-kind-external-module">
+						<a href="_worldsibu_convector_core_errors.invalidtypeerror.html" class="tsd-kind-icon">Invalid<wbr>Type<wbr>Error</a>
+					</li>
+					<li class=" tsd-kind-variable tsd-parent-kind-external-module">
+						<a href="../modules/_worldsibu_convector_core_errors.html#chaincodesidemessage" class="tsd-kind-icon">chaincode<wbr>Side<wbr>Message</a>
+					</li>
+					<li class=" tsd-kind-variable tsd-parent-kind-external-module tsd-is-not-exported">
+						<a href="../modules/_worldsibu_convector_core_errors.html#chaincodesidemessage-1" class="tsd-kind-icon">chaincode<wbr>Side<wbr>Message</a>
+					</li>
+				</ul>
+			</nav>
+		</div>
+		<div class="col-10 col-content">
+			<div class="tsd-page-title">
+				<div class="container-fluid">
+					<ul class="tsd-breadcrumb">
+						<li>
+							<a href="../index.html"> Convector Suite</a>
+						</li>
+					</ul>
+					<h1>ControllerMissingError</h1>
+				</div>
+			</div>
+			<div>
+				<section class="tsd-panel tsd-hierarchy">
+					<h3>Hierarchy</h3>
+					<ul class="tsd-hierarchy">
+						<li>
+							<a href="_worldsibu_convector_core_errors.baseerror.html" class="tsd-signature-type">BaseError</a>
+							<ul class="tsd-hierarchy">
+								<li>
+									<span class="target">ControllerMissingError</span>
+								</li>
+							</ul>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel-group tsd-index-group">
+					<h2>Index</h2>
+					<section class="tsd-panel tsd-index-panel">
+						<div class="tsd-index-content">
+							<section class="tsd-index-section ">
+								<h3>Constructors</h3>
+								<ul class="tsd-index-list">
+									<li class="tsd-kind-constructor tsd-parent-kind-class tsd-is-overwrite"><a href="_worldsibu_convector_core_errors.controllermissingerror.html#constructor" class="tsd-kind-icon">constructor</a></li>
+								</ul>
+							</section>
+							<section class="tsd-index-section ">
+								<h3>Properties</h3>
+								<ul class="tsd-index-list">
+									<li class="tsd-kind-property tsd-parent-kind-class tsd-is-overwrite"><a href="_worldsibu_convector_core_errors.controllermissingerror.html#code" class="tsd-kind-icon">code</a></li>
+									<li class="tsd-kind-property tsd-parent-kind-class"><a href="_worldsibu_convector_core_errors.controllermissingerror.html#ctrl" class="tsd-kind-icon">ctrl</a></li>
+									<li class="tsd-kind-property tsd-parent-kind-class tsd-is-overwrite"><a href="_worldsibu_convector_core_errors.controllermissingerror.html#description" class="tsd-kind-icon">description</a></li>
+									<li class="tsd-kind-property tsd-parent-kind-class tsd-is-overwrite"><a href="_worldsibu_convector_core_errors.controllermissingerror.html#explanation" class="tsd-kind-icon">explanation</a></li>
+									<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="_worldsibu_convector_core_errors.controllermissingerror.html#original" class="tsd-kind-icon">original</a></li>
+									<li class="tsd-kind-property tsd-parent-kind-class"><a href="_worldsibu_convector_core_errors.controllermissingerror.html#pkg" class="tsd-kind-icon">pkg</a></li>
+									<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-static"><a href="_worldsibu_convector_core_errors.controllermissingerror.html#message" class="tsd-kind-icon">message</a></li>
+									<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-static"><a href="_worldsibu_convector_core_errors.controllermissingerror.html#name" class="tsd-kind-icon">name</a></li>
+									<li class="tsd-kind-property tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited tsd-is-static"><a href="_worldsibu_convector_core_errors.controllermissingerror.html#stack" class="tsd-kind-icon">stack</a></li>
+								</ul>
+							</section>
+							<section class="tsd-index-section tsd-is-inherited tsd-is-private-protected">
+								<h3>Methods</h3>
+								<ul class="tsd-index-list">
+									<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-protected"><a href="_worldsibu_convector_core_errors.controllermissingerror.html#getmessage" class="tsd-kind-icon">get<wbr>Message</a></li>
+									<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-protected"><a href="_worldsibu_convector_core_errors.controllermissingerror.html#getoriginal" class="tsd-kind-icon">get<wbr>Original</a></li>
+								</ul>
+							</section>
+						</div>
+					</section>
+				</section>
+				<section class="tsd-panel-group tsd-member-group ">
+					<h2>Constructors</h2>
+					<section class="tsd-panel tsd-member tsd-kind-constructor tsd-parent-kind-class tsd-is-overwrite">
+						<a name="constructor" class="tsd-anchor"></a>
+						<h3>constructor</h3>
+						<ul class="tsd-signatures tsd-kind-constructor tsd-parent-kind-class tsd-is-overwrite">
+							<li class="tsd-signature tsd-kind-icon">new <wbr>Controller<wbr>Missing<wbr>Error<span class="tsd-signature-symbol">(</span>pkg<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, ctrl<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_worldsibu_convector_core_errors.controllermissingerror.html" class="tsd-signature-type">ControllerMissingError</a></li>
+						</ul>
+						<ul class="tsd-descriptions">
+							<li class="tsd-description">
+								<aside class="tsd-sources">
+									<p>Overrides <a href="_worldsibu_convector_core_errors.baseerror.html">BaseError</a>.<a href="_worldsibu_convector_core_errors.baseerror.html#constructor">constructor</a></p>
+									<ul>
+										<li>Defined in <a href="https://github.com/walmon/convector/blob/71b7ce2/@worldsibu/convector-core-errors/src/controller.errors.ts#L25">@worldsibu/convector-core-errors/src/controller.errors.ts:25</a></li>
+									</ul>
+								</aside>
+								<h4 class="tsd-parameters-title">Parameters</h4>
+								<ul class="tsd-parameters">
+									<li>
+										<h5>pkg: <span class="tsd-signature-type">string</span></h5>
+									</li>
+									<li>
+										<h5>ctrl: <span class="tsd-signature-type">string</span></h5>
+									</li>
+								</ul>
+								<h4 class="tsd-returns-title">Returns <a href="_worldsibu_convector_core_errors.controllermissingerror.html" class="tsd-signature-type">ControllerMissingError</a></h4>
+							</li>
+						</ul>
+					</section>
+				</section>
+				<section class="tsd-panel-group tsd-member-group ">
+					<h2>Properties</h2>
+					<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-overwrite">
+						<a name="code" class="tsd-anchor"></a>
+						<h3>code</h3>
+						<div class="tsd-signature tsd-kind-icon">code<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> =&nbsp;&quot;CTRL_MISS_ERR&quot;</span></div>
+						<aside class="tsd-sources">
+							<p>Overrides <a href="_worldsibu_convector_core_errors.baseerror.html">BaseError</a>.<a href="_worldsibu_convector_core_errors.baseerror.html#code">code</a></p>
+							<ul>
+								<li>Defined in <a href="https://github.com/walmon/convector/blob/71b7ce2/@worldsibu/convector-core-errors/src/controller.errors.ts#L21">@worldsibu/convector-core-errors/src/controller.errors.ts:21</a></li>
+							</ul>
+						</aside>
+					</section>
+					<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
+						<a name="ctrl" class="tsd-anchor"></a>
+						<h3>ctrl</h3>
+						<div class="tsd-signature tsd-kind-icon">ctrl<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
+						<aside class="tsd-sources">
+							<ul>
+								<li>Defined in <a href="https://github.com/walmon/convector/blob/71b7ce2/@worldsibu/convector-core-errors/src/controller.errors.ts#L27">@worldsibu/convector-core-errors/src/controller.errors.ts:27</a></li>
+							</ul>
+						</aside>
+					</section>
+					<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-overwrite">
+						<a name="description" class="tsd-anchor"></a>
+						<h3>description</h3>
+						<div class="tsd-signature tsd-kind-icon">description<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> =&nbsp;&quot;The chaincode controller was not found&quot;</span></div>
+						<aside class="tsd-sources">
+							<p>Overrides <a href="_worldsibu_convector_core_errors.baseerror.html">BaseError</a>.<a href="_worldsibu_convector_core_errors.baseerror.html#description">description</a></p>
+							<ul>
+								<li>Defined in <a href="https://github.com/walmon/convector/blob/71b7ce2/@worldsibu/convector-core-errors/src/controller.errors.ts#L22">@worldsibu/convector-core-errors/src/controller.errors.ts:22</a></li>
+							</ul>
+						</aside>
+					</section>
+					<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-overwrite">
+						<a name="explanation" class="tsd-anchor"></a>
+						<h3>explanation</h3>
+						<div class="tsd-signature tsd-kind-icon">explanation<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> =&nbsp;&#x60;The module ${this.pkg} does not contain a class named ${this.ctrl}${chaincodeSideMessage}&#x60;</span></div>
+						<aside class="tsd-sources">
+							<p>Overrides <a href="_worldsibu_convector_core_errors.baseerror.html">BaseError</a>.<a href="_worldsibu_convector_core_errors.baseerror.html#explanation">explanation</a></p>
+							<ul>
+								<li>Defined in <a href="https://github.com/walmon/convector/blob/71b7ce2/@worldsibu/convector-core-errors/src/controller.errors.ts#L23">@worldsibu/convector-core-errors/src/controller.errors.ts:23</a></li>
+							</ul>
+						</aside>
+					</section>
+					<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+						<a name="original" class="tsd-anchor"></a>
+						<h3><span class="tsd-flag ts-flagOptional">Optional</span> original</h3>
+						<div class="tsd-signature tsd-kind-icon">original<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Error</span></div>
+						<aside class="tsd-sources">
+							<p>Inherited from <a href="_worldsibu_convector_core_errors.baseerror.html">BaseError</a>.<a href="_worldsibu_convector_core_errors.baseerror.html#original">original</a></p>
+							<ul>
+								<li>Defined in <a href="https://github.com/walmon/convector/blob/71b7ce2/@worldsibu/convector-core-errors/src/base.error.ts#L4">@worldsibu/convector-core-errors/src/base.error.ts:4</a></li>
+							</ul>
+						</aside>
+					</section>
+					<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
+						<a name="pkg" class="tsd-anchor"></a>
+						<h3>pkg</h3>
+						<div class="tsd-signature tsd-kind-icon">pkg<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
+						<aside class="tsd-sources">
+							<ul>
+								<li>Defined in <a href="https://github.com/walmon/convector/blob/71b7ce2/@worldsibu/convector-core-errors/src/controller.errors.ts#L27">@worldsibu/convector-core-errors/src/controller.errors.ts:27</a></li>
+							</ul>
+						</aside>
+					</section>
+					<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-static">
+						<a name="message" class="tsd-anchor"></a>
+						<h3><span class="tsd-flag ts-flagStatic">Static</span> message</h3>
+						<div class="tsd-signature tsd-kind-icon">message<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
+						<aside class="tsd-sources">
+							<p>Inherited from Error.message</p>
+							<ul>
+								<li>Defined in node_modules/typedoc/node_modules/typescript/lib/lib.es5.d.ts:886</li>
+							</ul>
+						</aside>
+					</section>
+					<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-static">
+						<a name="name" class="tsd-anchor"></a>
+						<h3><span class="tsd-flag ts-flagStatic">Static</span> name</h3>
+						<div class="tsd-signature tsd-kind-icon">name<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
+						<aside class="tsd-sources">
+							<p>Inherited from Error.name</p>
+							<ul>
+								<li>Defined in node_modules/typedoc/node_modules/typescript/lib/lib.es5.d.ts:885</li>
+							</ul>
+						</aside>
+					</section>
+					<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited tsd-is-static">
+						<a name="stack" class="tsd-anchor"></a>
+						<h3><span class="tsd-flag ts-flagStatic">Static</span> <span class="tsd-flag ts-flagOptional">Optional</span> stack</h3>
+						<div class="tsd-signature tsd-kind-icon">stack<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
+						<aside class="tsd-sources">
+							<p>Inherited from Error.stack</p>
+							<p>Overrides Error.stack</p>
+							<ul>
+								<li>Defined in node_modules/typedoc/node_modules/typescript/lib/lib.es5.d.ts:887</li>
+							</ul>
+						</aside>
+					</section>
+				</section>
+				<section class="tsd-panel-group tsd-member-group tsd-is-inherited tsd-is-private-protected">
+					<h2>Methods</h2>
+					<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-protected">
+						<a name="getmessage" class="tsd-anchor"></a>
+						<h3><span class="tsd-flag ts-flagProtected">Protected</span> get<wbr>Message</h3>
+						<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-protected">
+							<li class="tsd-signature tsd-kind-icon">get<wbr>Message<span class="tsd-signature-symbol">(</span>original<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></li>
+						</ul>
+						<ul class="tsd-descriptions">
+							<li class="tsd-description">
+								<aside class="tsd-sources">
+									<p>Inherited from <a href="_worldsibu_convector_core_errors.baseerror.html">BaseError</a>.<a href="_worldsibu_convector_core_errors.baseerror.html#getmessage">getMessage</a></p>
+									<ul>
+										<li>Defined in <a href="https://github.com/walmon/convector/blob/71b7ce2/@worldsibu/convector-core-errors/src/base.error.ts#L38">@worldsibu/convector-core-errors/src/base.error.ts:38</a></li>
+									</ul>
+								</aside>
+								<h4 class="tsd-parameters-title">Parameters</h4>
+								<ul class="tsd-parameters">
+									<li>
+										<h5>original: <span class="tsd-signature-type">string</span></h5>
+									</li>
+								</ul>
+								<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4>
+							</li>
+						</ul>
+					</section>
+					<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-protected">
+						<a name="getoriginal" class="tsd-anchor"></a>
+						<h3><span class="tsd-flag ts-flagProtected">Protected</span> get<wbr>Original</h3>
+						<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-protected">
+							<li class="tsd-signature tsd-kind-icon">get<wbr>Original<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></li>
+						</ul>
+						<ul class="tsd-descriptions">
+							<li class="tsd-description">
+								<aside class="tsd-sources">
+									<p>Inherited from <a href="_worldsibu_convector_core_errors.baseerror.html">BaseError</a>.<a href="_worldsibu_convector_core_errors.baseerror.html#getoriginal">getOriginal</a></p>
+									<ul>
+										<li>Defined in <a href="https://github.com/walmon/convector/blob/71b7ce2/@worldsibu/convector-core-errors/src/base.error.ts#L21">@worldsibu/convector-core-errors/src/base.error.ts:21</a></li>
+									</ul>
+								</aside>
+								<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4>
+							</li>
+						</ul>
+					</section>
+				</section>
+			</div>
+		</div>
+	</div>
+</div>
+<footer  class="with-border-bottom" >
+	<div class="container tsd-generator">
+		<div class="double-content">
+			<div>
+				<a href="https://worldsibu.tech">
+					<img src="../assets/images/worldsibu.svg" width=200>
+				</a>
+			</div>
+			<div>
+				<!-- Begin Mailchimp Signup Form -->
+				<link href="//cdn-images.mailchimp.com/embedcode/horizontal-slim-10_7.css" rel="stylesheet" type="text/css">
+				<style type="text/css">
+          .middle {
+            color: #fff !important;
+
+          }
+
+          .footer #mc_embed_signup {
+            background: transparent;
+            clear: left;
+            font: 16px Helvetica, Arial, sans-serif;
+            width: 100%;
+          }
+
+          /* Add your own Mailchimp form style overrides in your site stylesheet or in this style block.
+	   We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
+        </style>
+				<style type="text/css">
+          .middle #mc-embedded-subscribe {
+            background: #F40257;
+            text-transform: uppercase;
+            padding: 0px 24px !important;
+            height: auto;
+            border-radius: 50px !important;
+            font-size: 14px !important;
+          }
+
+          .middle #mc-embedded-subscribe:hover {
+            background: #F40257 !important;
+          }
+
+          .middle #mc-embedded-subscribe-form input[type=checkbox] {
+            display: inline;
+            width: auto;
+            margin-right: 10px;
+            text-align: left !important;
+          }
+
+          .middle #mergeRow-gdpr {
+            margin-top: 20px;
+            text-align: left !important;
+          }
+
+          .middle #mergeRow-gdpr fieldset label {
+            font-weight: normal;
+            text-align: left !important;
+          }
+
+          .middle #mc-embedded-subscribe-form .mc_fieldset {
+            border: none;
+            min-height: 0px;
+            padding-bottom: 0px;
+            border-radius: 50px;
+            text-align: left !important;
+            font-size: 20px !important;
+          }
+
+          .middle #mc_embed_signup_scroll {}
+
+          .middle #mce-EMAIL {
+            width: 300px !important;
+            font-size: 14px !important;
+          }
+        </style>
+				<div class="middle">
+					<div id="mc_embed_signup">
+						<form action="https://worldsibu.us19.list-manage.com/subscribe/post?u=4a9f0fa5a8269abdb50f5881a&amp;id=3aec9b46df"
+						method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank"
+						novalidate>
+						<div id="mc_embed_signup_scroll">
+							<input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="Your email"
+							required>
+							<!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+							<div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_4a9f0fa5a8269abdb50f5881a_3aec9b46df"
+							tabindex="-1" value=""></div>
+							<div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe"
+							class="button"></div>
+						</div>
+						</form>
+					</div>
+				</div>
+				<!--End mc_embed_signup-->
+			</div>
+		</div>
+	</div>
+</footer>
+<div class="overlay"></div>
+<script src="../assets/js/main.js"></script>
+<script>if (location.protocol == 'file:') document.write('<script src="../assets/js/search.js"><' + '/script>');</script>
+<script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+                m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+        ga('create', 'UA-128943824-2', '');
+        ga('send', 'pageview');
+    </script>
+</body>
+</html>
